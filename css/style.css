@@ -1,7 +1,96 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
+  font-family: 'Poppins', sans-serif;
   background: #0f0f1a;
-  color: white;
-  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: rgba(15, 15, 26, 0.7);
+  backdrop-filter: blur(10px);
+}
+.logo { font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; }
+.logo span { color: #7c3aed; }
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 28px;
+  transition: color .3s;
+}
+.nav-links a:hover { color: #7c3aed; }
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding-top: 100px;
+  padding: 0 8%;
+  background: linear-gradient(120deg, #0f0f1a, #2a1065, #0f0f1a);
+  background-size: 200% 200%;
+  animation: move 10s ease infinite;
+}
+@keyframes move { 50% { background-position: 100% 50%; } }
+
+.hello { color: #a78bfa; font-size: 1.1rem; animation: fadeUp 1s ease both; }
+.hero h1 { font-size: 4rem; animation: fadeUp 1s .2s ease both; }
+
+.typing {
+  font-size: 1.6rem;
+  color: #a78bfa;
+  width: 26ch;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #7c3aed;
+  margin: 10px 0 20px;
+  animation: typing 3s steps(26) infinite alternate, blink .7s infinite;
+}
+@keyframes typing { from { width: 0; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+.intro {
+  max-width: 520px;
+  color: #cbd5e1;
+  animation: fadeUp 1s .4s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* BUTTONS */
+.buttons { margin-top: 30px; animation: fadeUp 1s .6s ease both; }
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 6px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .3s, box-shadow .3s;
+}
+.btn:hover { transform: translateY(-4px); }
+.primary { background: #7c3aed; color: #fff; }
+.primary:hover { box-shadow: 0 10px 25px rgba(124, 58, 237, .5); }
+.outline { border: 2px solid #7c3aed; color: #fff; }
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.5rem; }
+  .typing { font-size: 1.1rem; }
+  .nav-links a { margin-left: 14px; font-size: .9rem; }
 }

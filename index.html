@@ -3,59 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Django Developer</title>
+  <meta name="description" content="Portfolio of Shifin, a Python and Django developer and iPhone photographer.">
+  <title>Shifin | Developer & iPhone Photographer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav>
-    <a href="#home" class="logo">Shifin<span>.</span></a>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="#skills">Skills</a>
-    </div>
-  </nav>
+  <header>
+    <a href="#top" class="logo">SHIFIN</a>
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#gallery">GALLERY</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
 
-  <section id="home" class="hero">
-    <p class="hello">Hello, I'm</p>
-    <h1>Your Name</h1>
-    <p class="typing">Python & Django Developer</p>
-    <p class="intro">I build clean, fast web applications and love turning ideas into real projects.</p>
-    <div class="buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn outline">Contact Me</a>
-    </div>
-  </section>
-    <section id="about" class="section">
-    <h2 class="title">About <span>Me</span></h2>
-    <div class="about-box">
-      <div class="about-photo">
-        <img src="images/me.jpg" alt="Your Name">
-      </div>
-      <div class="about-text">
-        <p>I'm a student learning Python and Django. I enjoy building web applications, solving problems, and learning something new every day.</p>
-        <p>I'm looking for opportunities where I can grow as a developer and work on real projects.</p>
+  <h1 class="giant" id="top">SHIFIN</h1>
+
+  <!-- ABOUT -->
+  <section class="panel" id="about">
+    <div class="card reveal">
+      <img class="card-img" src="images/me.jpg" alt="Shifin">
+      <div class="card-text">
+        <p>I'm a Python and Django developer and an iPhone photographer. I build web applications, solve problems, and capture everyday moments with the camera in my pocket. This is where I share what I'm building and shooting.</p>
+        <div class="card-bottom">
+          <a href="#projects" class="read">View Projects <span>→</span></a>
+          <img class="thumb" src="images/me2.jpg" alt="">
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section dark">
-    <h2 class="title">My <span>Skills</span></h2>
-    <div class="skills-grid">
-      <div class="skill-card">Python</div>
-      <div class="skill-card">Django</div>
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">Git & GitHub</div>
-      <div class="skill-card">SQL</div>
+  <!-- INTRO -->
+  <section class="intro reveal">
+    <p class="small">HI, I'M SHIFIN</p>
+    <h2 class="statement">A PYTHON & DJANGO DEVELOPER AND iPHONE PHOTOGRAPHER. BUILDING CLEAN WEB APPLICATIONS AND CAPTURING MOMENTS WORTH KEEPING.</h2>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills reveal" id="skills">
+    <p class="small">SKILLS</p>
+    <div class="skill-list">
+      <span>Python</span>
+      <span>Django</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>SQL</span>
+      <span>Git & GitHub</span>
+      <span>iPhone Photography</span>
+      <span>Photo Editing</span>
     </div>
   </section>
+
+  <!-- QUOTE -->
+  <section class="quote">
+    <h2 class="reveal">"EVERY EXPERT WAS ONCE A BEGINNER WHO KEPT BUILDING."</h2>
+    <img class="reveal" src="images/me3.jpg" alt="">
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="panel" id="projects">
+    <p class="small">SELECTED PROJECTS</p>
+
+    <div class="card reveal">
+      <img class="card-img" src="images/project1.jpg" alt="Blog Website">
+      <div class="card-text">
+        <h3>BLOG WEBSITE</h3>
+        <p>A blog app built with Django where users can register, log in, and write posts.</p>
+        <p class="tags">Python · Django · SQLite</p>
+        <div class="card-bottom">
+          <a href="#" class="read" target="_blank">Live Demo <span>→</span></a>
+          <a href="#" class="read" target="_blank">GitHub <span>→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <img class="card-img" src="images/project2.jpg" alt="To-Do App">
+      <div class="card-text">
+        <h3>TO-DO APP</h3>
+        <p>A task manager where users can add, edit, and delete tasks with a secure login.</p>
+        <p class="tags">Python · Django · Bootstrap</p>
+        <div class="card-bottom">
+          <a href="#" class="read" target="_blank">Live Demo <span>→</span></a>
+          <a href="#" class="read" target="_blank">GitHub <span>→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <img class="card-img" src="images/project3.jpg" alt="Portfolio Website">
+      <div class="card-text">
+        <h3>PORTFOLIO WEBSITE</h3>
+        <p>This portfolio, built with HTML, CSS and JavaScript with a responsive layout, scroll animations and a photo gallery.</p>
+        <p class="tags">HTML · CSS · JavaScript</p>
+        <div class="card-bottom">
+          <a href="#" class="read" target="_blank">Live Demo <span>→</span></a>
+          <a href="https://github.com/shifinshalu035-cell/Portfolio-new" class="read" target="_blank">GitHub <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <p class="small">PHOTOGRAPHY</p>
+    <h2 class="gallery-title reveal">SHOT ON iPHONE</h2>
+    <p class="gallery-sub reveal">Stories and moments captured with the camera in my pocket.</p>
+
+    <div class="gallery">
+      <figure class="g-item tall reveal">
+        <img src="images/gallery/photo1.jpg" alt="Photo 1">
+        <figcaption>Morning light<br><small>iPhone · 24mm · f/1.8</small></figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="images/gallery/photo2.jpg" alt="Photo 2">
+        <figcaption>City streets<br><small>iPhone · 24mm · f/1.8</small></figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="images/gallery/photo3.jpg" alt="Photo 3">
+        <figcaption>Portrait<br><small>iPhone · 48mm · f/2.8</small></figcaption>
+      </figure>
+      <figure class="g-item wide reveal">
+        <img src="images/gallery/photo4.jpg" alt="Photo 4">
+        <figcaption>Sunset<br><small>iPhone · 13mm · f/2.2</small></figcaption>
+      </figure>
+      <figure class="g-item reveal">
+        <img src="images/gallery/photo5.jpg" alt="Photo 5">
+        <figcaption>Night lights<br><small>iPhone · Night mode</small></figcaption>
+      </figure>
+      <figure class="g-item tall reveal">
+        <img src="images/gallery/photo6.jpg" alt="Photo 6">
+        <figcaption>Moments<br><small>iPhone · 24mm · f/1.8</small></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev">‹</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-nav lb-next" id="lbNext">›</button>
+    <p id="lbCaption"></p>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <p class="small">GOT AN IDEA OR AN OPPORTUNITY?</p>
+    <a class="giant-link" href="mailto:your-email@example.com">LET'S TALK</a>
+    <div class="social">
+      <a href="https://github.com/shifinshalu035-cell" target="_blank">GITHUB</a>
+      <a href="#" target="_blank">INSTAGRAM</a>
+      <a href="#" target="_blank">LINKEDIN</a>
+      <a href="mailto:your-email@example.com">EMAIL</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Shifin. Built with HTML, CSS & JavaScript.</footer>
 
   <script src="js/script.js"></script>
 </body>
